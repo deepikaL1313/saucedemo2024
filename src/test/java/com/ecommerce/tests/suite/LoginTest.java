@@ -80,6 +80,7 @@ private Logger log = LogManager.getLogger(this.getClass().getName());
             log.info("STEP 5 : Verify Error message for locked out user");
             result = loginPage.isLockedOut();
             s_assert.assertTrue(result, "Locked out user error message is not displayed");
+            log.info("STEP 6 :  Locked out user error message displayed ? ["+result+"]");
             s_assert.assertAll();
             takeScreenshot();
         }
