@@ -8,26 +8,30 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * LoginPage class for interacting with the login page of the web application.
+ */
 public class LoginPage extends BasePage {
-
+    // Logger for logging information
     private Logger log = LogManager.getLogger(this.getClass().getName());
-    WebDriver driver ;
-    /*
-     **
+
+    // WebDriver instance
+    WebDriver driver;
+
+    /**
      * Constructor for the LoginPage class.
      * Initializes the WebDriver.
      *
      * @param driver The WebDriver instance to be used for interacting with the web application.
      */
-
     public LoginPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
-        /*  Initializes the Web Elements Declared*/
+        // Initialize the Web Elements declared with @FindBy annotations
         PageFactory.initElements(driver, this);
     }
 
-    /* Locators for Web Elements */
+    /* Locators for Web Elements in Login Page */
     @FindBy(xpath = "//*[@id='user-name']")
     private WebElement userName;
 
@@ -43,25 +47,48 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//h3[@data-test='error'][contains(.,'Epic sadface: Sorry, this user has been locked out.')]")
     private WebElement lockedOutErrorMsg;
 
+    /**
+     * Checks if the login page is displayed.
+     *
+     * @return true if the login page is displayed, false otherwise.
+     */
     public boolean isLoginPage() {
-        waitForElementTobeVisible(driver,pageTitle, Constants.WAIT_TIME_TWO_SECONDS);
+        waitForElementToBeVisible(driver, pageTitle, Constants.WAIT_TIME_TWO_SECONDS);
         return pageTitle.isDisplayed();
     }
 
-    /* Operations to be performed on locators are wrapped in methods below */
-
+    /**
+     * Enters the username.
+     *
+     * @param userNameInput The username to be entered.
+     */
     public void enterUserName(String userNameInput) {
         userName.clear();
         userName.sendKeys(userNameInput);
     }
+
+    /**
+     * Enters the password.
+     *
+     * @param passwordInput The password to be entered.
+     */
     public void enterPassword(String passwordInput) {
         password.clear();
         password.sendKeys(passwordInput);
     }
+
+    /**
+     * Clicks the login button.
+     */
     public void clickLoginBtn() {
         loginBtn.click();
     }
 
+    /**
+     * Checks if the locked out error message is displayed.
+     *
+     * @return true if the locked out error message is displayed, false otherwise.
+     */
     public boolean isLockedOut() {
         return lockedOutErrorMsg.isDisplayed();
     }

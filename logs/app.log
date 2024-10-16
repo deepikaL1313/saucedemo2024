@@ -81,3 +81,58 @@
 03:38:20.919 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 9 :  Footer section Message is : [© 2024 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy
 03:38:21.401 [main] INFO  com.ecommerce.tests.suite.LoginTest - ScreenShot Taken at : [/Users/d0m08qm/Documents/project2024/saucedemo/target/screenshots/20241014_033821.png]
 03:38:21.772 [main] INFO  com.ecommerce.tests.suite.LoginTest - ScreenShot Taken at : [/Users/d0m08qm/Documents/project2024/saucedemo/target/screenshots/20241014_033821.png]
+22:32:36.638 [main] INFO  com.ecommerce.core.utils.ExcelUtility - startRow=7, endRow=9, startCol=0, endCol=3
+22:32:36.707 [main] INFO  com.ecommerce.core.utils.ExcelUtility - startRow=0, endRow=6, startCol=0, endCol=3
+22:32:59.769 [main] INFO  com.ecommerce.core.utils.ExcelUtility - startRow=7, endRow=9, startCol=0, endCol=3
+22:32:59.791 [main] INFO  com.ecommerce.tests.suite.LoginTest - Set up a WebDriver instance for [CHROME]
+22:33:34.902 [main] INFO  com.ecommerce.core.utils.ExcelUtility - startRow=0, endRow=6, startCol=0, endCol=3
+22:36:07.007 [main] INFO  com.ecommerce.core.utils.ExcelUtility - startRow=7, endRow=9, startCol=0, endCol=3
+22:36:07.033 [main] INFO  com.ecommerce.tests.suite.LoginTest - Set up a WebDriver instance for [CHROME]
+22:36:24.848 [main] INFO  com.ecommerce.tests.suite.LoginTest - Browser Initialized to [CHROME]
+22:36:27.924 [main] INFO  com.ecommerce.tests.suite.LoginTest - Environment Initialized to [STAGE]
+22:36:28.148 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 1 : Navigated to URL [https://www.saucedemo.com/]
+22:36:28.187 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 2 : Verify Login page is loaded
+22:36:28.979 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 3 : Login page Opened : [true]
+22:36:28.979 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 4 : Enter credentials on Login page : Username and Password and click Login button
+22:36:34.016 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 5 : Verify Error message for locked out user
+22:36:34.280 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 6 : Locked out user error message displayed? [true]
+22:36:34.616 [main] INFO  com.ecommerce.tests.suite.LoginTest - Screenshot taken at : [/Users/d0m08qm/Documents/project2024/saucedemo/target/screenshots/20241016_223634.png]
+22:36:34.862 [main] INFO  com.ecommerce.tests.suite.LoginTest - Screenshot taken at : [/Users/d0m08qm/Documents/project2024/saucedemo/target/screenshots/20241016_223634.png]
+22:36:40.176 [main] INFO  com.ecommerce.core.utils.ExcelUtility - startRow=0, endRow=6, startCol=0, endCol=3
+22:36:40.190 [main] INFO  com.ecommerce.tests.suite.LoginTest - Set up a WebDriver instance for [CHROME]
+22:36:45.086 [main] INFO  com.ecommerce.tests.suite.LoginTest - Browser Initialized to [CHROME]
+22:36:47.627 [main] INFO  com.ecommerce.tests.suite.LoginTest - Environment Initialized to [STAGE]
+22:36:47.794 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 1 : Navigated to URL [https://www.saucedemo.com/]
+22:36:47.796 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 2 : Verify Login page is loaded
+22:36:48.769 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 3 : Login page Opened : [true]
+22:36:48.769 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 4 : Enter credentials on Login page : Username and Password and click Login button
+22:36:54.334 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 5 : Verify PLP page is loaded
+22:36:54.981 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 6 : PLP page Opened : [true]
+22:36:55.490 [main] INFO  com.ecommerce.tests.suite.LoginTest - Screenshot taken at : [/Users/d0m08qm/Documents/project2024/saucedemo/target/screenshots/20241016_223655.png]
+22:36:55.491 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 7 : Verify Footer section of PLP page is loaded
+22:36:55.697 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 8 : Footer section of PLP page Opened : [true]
+22:36:55.777 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 9 : Footer section Message is : [© 2024 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy]
+22:36:56.174 [main] INFO  com.ecommerce.tests.suite.LoginTest - Screenshot taken at : [/Users/d0m08qm/Documents/project2024/saucedemo/target/screenshots/20241016_223656.png]
+22:36:56.561 [main] INFO  com.ecommerce.tests.suite.LoginTest - Screenshot taken at : [/Users/d0m08qm/Documents/project2024/saucedemo/target/screenshots/20241016_223656.png]
+22:37:01.903 [main] INFO  com.ecommerce.tests.suite.LoginTest - Set up a WebDriver instance for [CHROME]
+22:37:06.465 [main] INFO  com.ecommerce.tests.suite.LoginTest - Browser Initialized to [CHROME]
+22:37:09.189 [main] INFO  com.ecommerce.tests.suite.LoginTest - Environment Initialized to [STAGE]
+22:37:09.505 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 1 : Navigated to URL [https://www.saucedemo.com/]
+22:37:09.507 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 2 : Verify Login page is loaded
+22:37:10.273 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 3 : Login page Opened : [true]
+22:37:10.274 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 4 : Enter credentials on Login page : Username and Password and click Login button
+22:37:16.287 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 5 : Verify PLP page is loaded
+22:37:16.858 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 6 : PLP page Opened : [true]
+22:37:17.568 [main] INFO  com.ecommerce.tests.suite.LoginTest - Screenshot taken at : [/Users/d0m08qm/Documents/project2024/saucedemo/target/screenshots/20241016_223717.png]
+22:37:17.570 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 7 : Verify Footer section of PLP page is loaded
+22:37:17.767 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 8 : Footer section of PLP page Opened : [true]
+22:37:17.838 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 9 : Footer section Message is : [© 2024 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy]
+22:37:18.227 [main] INFO  com.ecommerce.tests.suite.LoginTest - Screenshot taken at : [/Users/d0m08qm/Documents/project2024/saucedemo/target/screenshots/20241016_223718.png]
+22:37:18.598 [main] INFO  com.ecommerce.tests.suite.LoginTest - Screenshot taken at : [/Users/d0m08qm/Documents/project2024/saucedemo/target/screenshots/20241016_223718.png]
+22:37:23.769 [main] INFO  com.ecommerce.tests.suite.LoginTest - Set up a WebDriver instance for [CHROME]
+22:37:28.401 [main] INFO  com.ecommerce.tests.suite.LoginTest - Browser Initialized to [CHROME]
+22:37:31.121 [main] INFO  com.ecommerce.tests.suite.LoginTest - Environment Initialized to [STAGE]
+22:37:31.209 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 1 : Navigated to URL [https://www.saucedemo.com/]
+22:37:31.213 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 2 : Verify Login page is loaded
+22:37:32.063 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 3 : Login page Opened : [true]
+22:37:32.064 [main] INFO  com.ecommerce.tests.suite.LoginTest - STEP 4 : Enter credentials on Login page : Username and Password and click Login button

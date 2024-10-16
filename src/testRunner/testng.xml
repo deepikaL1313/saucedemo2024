@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
 <suite name="SANITY">
+
+    <!-- Listener for retrying failed tests -->
     <listeners>
-<!--        <listener class-name="com.ecommerce.core.Listener.FailedTestRetryListener"/>-->
+        <listener class-name="com.ecommerce.core.Listener.FailedTestRetryListener"/>
     </listeners>
-    <!-- values supported are {STAGE, DEV, PROD} -->
+
+    <!-- Test environment parameter: supported values are {STAGE, DEV, PROD} -->
     <parameter name="test.env" value="STAGE" />
-    <!-- values supported are {CHROME, FIREFOX, EDGE} -->
+
+    <!-- Browser parameter: supported values are {CHROME, FIREFOX, EDGE} -->
     <parameter name="test.browser" value="CHROME"/>
+
+    <!-- Define a test with a name and thread count -->
     <test name="E-comm Sanity Tests" thread-count="1">
         <classes>
-            <class name="com.ecommerce.tests.suite.LoginTest">
-                <methods>
-<!--                    <exclude name = "verifyLoginWithValidCredentialsTest"></exclude>-->
-<!--                   <exclude name = "verifyLoginWithInValidCredentialsTest"></exclude>-->
-                </methods>
-            </class>
-            
+            <!-- Include the LoginTest class in this test -->
+            <class name="com.ecommerce.tests.suite.LoginTest"/>
         </classes>
     </test>
+
 </suite>

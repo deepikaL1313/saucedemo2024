@@ -12,42 +12,64 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class FooterSection extends BasePage{
-
+/**
+ * FooterSection class for interacting with the footer section of the web application.
+ */
+public class FooterSection extends BasePage {
+    // Logger for logging information
     private Logger log = LogManager.getLogger(this.getClass().getName());
+
+    // WebDriver instance
     WebDriver driver;
 
-    /*
-     **
-     * Constructor for the LoginPage class.
+    /**
+     * Constructor for the FooterSection class.
      * Initializes the WebDriver.
      *
      * @param driver The WebDriver instance to be used for interacting with the web application.
      */
-
     public FooterSection(WebDriver driver) {
         super(driver);
         this.driver = driver;
-        /*  Initializes the Web Elements Declared*/
+        // Initialize the Web Elements declared with @FindBy annotations
         PageFactory.initElements(driver, this);
     }
 
+    // Footer message element
     @FindBy(xpath = "//div[@class='footer_copy'][contains(.,'© 2024 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy')]")
     private WebElement footerMesssage;
 
+    // Social icons element
     @FindBy(xpath = "//ul[@class='social']")
     private WebElement socialIcon;
+
+    /**
+     * Checks if the footer message is correct.
+     *
+     * @return true if the footer message is displayed, false otherwise.
+     */
     public boolean isFooterMessageCorrect() {
-        waitForElementTobeVisible(driver,footerMesssage, Constants.WAIT_TIME_TWO_SECONDS);
+        waitForElementToBeVisible(driver, footerMesssage, Constants.WAIT_TIME_TWO_SECONDS);
         return footerMesssage.isDisplayed();
     }
 
+    /**
+     * Gets the footer message text.
+     *
+     * @return The text of the footer message.
+     */
     public String getFooterMessage() {
         return footerMesssage.getText();
     }
-    public boolean isSocialIconsPresent(int numberOfSocialIcons) {
-      List<WebElement> socialIcons = socialIcon.findElements(By.tagName("li"));
-      return socialIcons.size() == numberOfSocialIcons;
-    }
 
+    /**
+     * Checks if the specified number of social icons are present.
+     *
+     * @param numberOfSocialIcons The expected number of social icons.
+     * @return true if the number of social icons matches, false otherwise.
+     */
+    public boolean isSocialIconsPresent(int numberOfSocialIcons) {
+        List<WebElement> socialIcons = socialIcon.findElements(By.tagName("li"));
+        return socialIcons.size() == numberOfSocialIcons;
+    }
 }
