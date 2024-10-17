@@ -36,7 +36,6 @@ public class LoginTest extends BaseTest {
             log.info("STEP 2 : Verify Login page is loaded");
             result = loginPage.isLoginPage();
             s_assert.assertTrue(result, "Login Page is not displayed");
-
             log.info("STEP 3 : Login page Opened : [" + result + "]");
 
             log.info("STEP 4 : Enter credentials on Login page : Username and Password and click Login button");
@@ -60,7 +59,7 @@ public class LoginTest extends BaseTest {
             log.info("STEP 9 : Footer section Message is : [" + footerSection.getFooterMessage() + "]");
             takeScreenshot();
         } catch (Exception e) {
-            s_assert.fail("Exception Occurred during execution of Test : [" + e.getLocalizedMessage() + "]");
+            s_assert.fail("Exception Occurred during execution of Test : [" + e.getMessage() + "]");
             log.error("Exception Occurred during execution of Test [" + e.getMessage() + "]");
         } finally {
             takeScreenshot();
@@ -102,7 +101,7 @@ public class LoginTest extends BaseTest {
             s_assert.assertAll();
             takeScreenshot();
         } catch (Exception e) {
-            s_assert.fail("Exception Occurred during execution of Test : [" + e.getLocalizedMessage() + "]");
+            s_assert.fail("Exception Occurred during execution of Test : [" + e.getMessage() + "]");
             log.error("Exception Occurred during execution of Test [" + e.getMessage() + "]");
             s_assert.assertAll();
         } finally {
