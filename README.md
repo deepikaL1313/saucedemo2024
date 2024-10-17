@@ -43,6 +43,7 @@ mvn test -DsuiteXmlFile=testng.xml
 Alternatively, you can run the tests directly through your IDE (such as IntelliJ IDEA or Eclipse) by right-clicking the testng.xml file and selecting "Run".
 
 Note : To view default TestNG reports , Edit the Run/Debug configurations 
+
 ## Framework Structure
 
 saucedemo2024/
