@@ -41,7 +41,7 @@ Advantages of Page Object Model are
    mvn clean install
    
 ## Running Tests
-
+ ```bash
 mvn test -DsuiteXmlFile=testng.xml
 
 
