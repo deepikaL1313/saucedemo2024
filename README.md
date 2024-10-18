@@ -32,13 +32,16 @@ Advantages of Page Object Model are
    ```bash
    git clone https://github.com/deepikaL1313/saucedemo2024.git
    
-3. Navigate to the project directory:
+2. Navigate to the project directory:
+   ```bash
    cd saucedemo2024
 
-4. Install the project dependencies:
+3. Install the project dependencies:
+   ```bash
    mvn clean install
    
 ## Running Tests
+```bash
 mvn test -DsuiteXmlFile=testng.xml
 
 Alternatively, you can run the tests directly through your IDE (such as IntelliJ IDEA or Eclipse) by right-clicking the testng.xml file and selecting "Run".
@@ -46,7 +49,7 @@ Alternatively, you can run the tests directly through your IDE (such as IntelliJ
 Note : To view default TestNG reports , Edit the Run/Debug configurations > Select Output Directory as Project's taget folder > Select Listeners tab > Checkmark Use default reports , Reports can be accessed from target folder > index.html
 
 ## Framework Structure
-
+```bash
 saucedemo2024/
 |-- src/
 |   |-- main/
