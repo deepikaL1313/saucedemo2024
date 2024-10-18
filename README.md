@@ -29,12 +29,13 @@ Advantages of Page Object Model are
 
 ## Setup
 1. Clone the repository:
+   ```bash
    git clone https://github.com/deepikaL1313/saucedemo2024.git
    
-2. Navigate to the project directory:
+3. Navigate to the project directory:
    cd saucedemo2024
 
-3. Install the project dependencies:
+4. Install the project dependencies:
    mvn clean install
    
 ## Running Tests
