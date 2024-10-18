@@ -40,13 +40,9 @@ Advantages of Page Object Model are
    ```bash
    mvn clean install
    
-## Running Tests
+4. Running Tests
    ```bash
    mvn test -DsuiteXmlFile=testng.xml
-
-
-
-
 
 ## Framework Structure
 
