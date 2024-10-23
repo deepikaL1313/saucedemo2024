@@ -18,5 +18,14 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+    - uses: browser-actions/setup-chrome@latest
+      run: chrome --version
+
+    - uses: browser-actions/setup-firefox@latest
+      run: firefox --version
+
+    - uses: browser-actions/setup-edge@latest
+      run: edge --version
+
     - name: Build and Run tests with Maven
       run: mvn clean test -DsuiteFile=testRunner/testng.xml
