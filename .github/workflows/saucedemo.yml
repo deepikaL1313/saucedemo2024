@@ -28,10 +28,5 @@ jobs:
         with:
           firefox-version: latest
 
-      - name: Set up Edge
-        uses: browser-actions/setup-edge@latest
-        with:
-          edge-version: latest
-
       - name: Build and Run tests with Maven
         run: mvn clean test -DsuiteFile=testRunner/testng.xml
